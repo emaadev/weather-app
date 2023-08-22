@@ -1,0 +1,57 @@
+.mainInfo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.city {
+    font-size: 38px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.country {
+    font-size: 25px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.rowRouteInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.condition {
+    font-size: 24px;
+}
+
+.weatherPressure {
+    text-align: center;
+    font-size: 24px;
+}
+
+.current {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+
+.rowRouteInfo .condition {
+    font-size: 20px;
+}
+
+.rowRouteInfo .current {
+    font-size: 30px;
+    font-weight: bold;
+}
