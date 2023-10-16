@@ -24,24 +24,24 @@ export default function WeatherMainInfo({ weather }) {
 
       <div className={styles.rowRouteInfo}>
         <div className={styles.weatherPressure}>
-          <div className={styles.condition}>Presión Atmosférica</div>
+          <div className={styles.condition}>Atmospheric Pressure</div>
           <div className={styles.current}>
             {weather?.current.pressure_mb} mb
           </div>
         </div>
         <div className={styles.weatherPressure}>
-          <div className={styles.condition}>Precipitación</div>
+          <div className={styles.condition}>Precipitation</div>
           <div className={styles.current}>{weather?.current.precip_mm}%</div>
         </div>
       </div>
 
       <div className={styles.rowRouteInfo}>
         <div className={styles.weatherPressure}>
-          <div className={styles.condition}>Vel. Viento</div>
+          <div className={styles.condition}>Wind Speed</div>
           <div className={styles.current}>{weather?.current.wind_kph} km/h</div>
         </div>
         <div className={styles.weatherPressure}>
-          <div className={styles.condition}>Dirección del Viento</div>
+          <div className={styles.condition}>Wind Direction</div>
           <div className={styles.current}>
             {weather?.current.wind_dir} <WindDirection weather={weather} />
           </div>

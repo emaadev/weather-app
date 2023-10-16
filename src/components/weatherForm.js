@@ -18,7 +18,12 @@ export default function WeatherForm({ onChangeCity }) {
 
   return (
     <form className={styles.container} onSubmit={handleSubmit}>
-      <input className={styles.input} type="text" onChange={onChange} />
+      <input
+        className={styles.input}
+        type="text"
+        placeholder="Buenos Aires, Argentina"
+        onChange={onChange}
+      />
       <button className={styles.button} type="submit">
         Search
       </button>

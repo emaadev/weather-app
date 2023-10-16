@@ -3,6 +3,7 @@ import WeatherForm from "./weatherForm.js";
 import WeatherMainInfo from "./weatherMainInfo.js";
 
 import styles from "./weatherApp.module.css";
+import "../App.css";
 import Loading from "./loading.js";
 
 export default function WeatherApp() {
@@ -39,6 +40,13 @@ export default function WeatherApp() {
 
   return (
     <div className={styles.weatherContainer}>
+      <div className="title-container">
+        <h1>Weather App</h1>
+        <p>
+          Welcome to the Weather App Project, insert a place below for more
+          weather details ⬇️
+        </p>
+      </div>
       <WeatherForm onChangeCity={handleChangeCity} />
       {weather ? <WeatherMainInfo weather={weather} /> : <Loading />}
     </div>
